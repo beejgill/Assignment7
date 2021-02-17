@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Book List";
+}
+
+@model IQueryable<Book>
+
+<div class="d-flex justify-content-center">
+    <h1>Book List</h1>
+</div>
+
+@foreach (var x in Model)
+{
+    <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">@x.BookTitle</h5>
+                <h6 class="card-subtitle mb-2 text-muted">@x.AuthorFirstName @x.AuthorLastName</h6>
+                <p class="card-text">Classification: @x.Classification, Category: @x.Category, ISBN: @x.ISBN</p>
+                <a href="#" class="card-link">@x.Publisher</a>
+                <a href="#" class="card-link">@x.Price</a>
+            </div>
+        </div>
+    </div>
+}
