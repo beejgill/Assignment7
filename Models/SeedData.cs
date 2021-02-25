@@ -31,7 +31,8 @@ namespace Assignment5.Models
                         ISBN = "978-0451419439",
                         Classification = "Fiction",
                         Category = "Classic",
-                        Price = 9.95F
+                        Price = 9.95F,
+                        Pages = 1488
                     },
 
                     new Book
@@ -43,7 +44,8 @@ namespace Assignment5.Models
                         ISBN = "978-0743270755",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = 14.58F
+                        Price = 14.58F,
+                        Pages = 944
                     },
 
                     new Book
@@ -55,7 +57,8 @@ namespace Assignment5.Models
                         ISBN = "978-0553384611",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = 21.54F
+                        Price = 21.54F,
+                        Pages = 832
                     },
 
                     new Book
@@ -67,7 +70,8 @@ namespace Assignment5.Models
                         ISBN = "978-0812981254",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = 11.61F
+                        Price = 11.61F,
+                        Pages = 864
                     },
 
                     new Book
@@ -79,7 +83,8 @@ namespace Assignment5.Models
                         ISBN = "978-0812974492",
                         Classification = "Non-Fiction",
                         Category = "Historical",
-                        Price = 13.33F
+                        Price = 13.33F,
+                        Pages = 528
                     },
 
                     new Book
@@ -91,7 +96,8 @@ namespace Assignment5.Models
                         ISBN = "978-0804171281",
                         Classification = "Fiction",
                         Category = "Historical Fiction",
-                        Price = 15.95F
+                        Price = 15.95F,
+                        Pages = 288
                     },
 
                     new Book
@@ -103,7 +109,8 @@ namespace Assignment5.Models
                         ISBN = "978-1455586691",
                         Classification = "Non-Fiction",
                         Category = "Self-Help",
-                        Price = 14.99F
+                        Price = 14.99F,
+                        Pages = 304
                     },
 
                     new Book
@@ -115,7 +122,8 @@ namespace Assignment5.Models
                         ISBN = "978-1455523023",
                         Classification = "Non-Fiction",
                         Category = "Self-Help",
-                        Price = 21.66F
+                        Price = 21.66F,
+                        Pages = 240
                     },
 
                     new Book
@@ -127,7 +135,8 @@ namespace Assignment5.Models
                         ISBN = "978-1591847984",
                         Classification = "Non-Fiction",
                         Category = "Business",
-                        Price = 29.16F
+                        Price = 29.16F,
+                        Pages = 400
                     },
 
                     new Book
@@ -139,7 +148,47 @@ namespace Assignment5.Models
                         ISBN = "978-0553393613",
                         Classification = "Fiction",
                         Category = "Thrillers",
-                        Price = 15.03F
+                        Price = 15.03F,
+                        Pages = 642
+                    },
+
+                    new Book
+                    {
+                        BookTitle = "The 7 Habits of Highly Effective People",
+                        AuthorFirstName = "Stephen R.",
+                        AuthorLastName = "Covey",
+                        Publisher = "Simon and Schuster",
+                        ISBN = "978-1476740058",
+                        Classification = "Non-Fiction",
+                        Category = "Self-Help",
+                        Price = 13.99F,
+                        Pages = 381
+                    },
+
+                    new Book
+                    {
+                        BookTitle = "Harry Potter and The Deathly Hallows",
+                        AuthorFirstName = "J. K.",
+                        AuthorLastName = "Rowling",
+                        Publisher = "Bloomsbury",
+                        ISBN = "978-0545010225",
+                        Classification = "Fiction",
+                        Category = "Fantasy",
+                        Price = 10.99F,
+                        Pages = 759
+                    },
+
+                    new Book
+                    {
+                        BookTitle = "The Book of Basketball",
+                        AuthorFirstName = "Bill",
+                        AuthorLastName = "Simmons",
+                        Publisher = "ESPN Books",
+                        ISBN = "978-0345511768",
+                        Classification = "Fiction",
+                        Category = "Sports",
+                        Price = 11.99F,
+                        Pages = 736
                     }
                 );
 
