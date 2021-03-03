@@ -16,10 +16,12 @@ namespace Assignment5.Models
 
             if (context.Database.GetPendingMigrations().Any())
             {
+                // if any pending migrations then migrate
                 context.Database.Migrate();
             }
             if(!context.Books.Any())
             {
+                // if no pending migrations populate the database with these entries
                 context.Books.AddRange(
 
                     new Book

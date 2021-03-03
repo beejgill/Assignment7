@@ -4,26 +4,16 @@
 
 @model BookListViewModel
 
-<div class="d-flex justify-content-center">
+<div>
     <h1>Book List</h1>
 </div>
 
 @foreach (var x in Model.Books)
 {
-    <div class="d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body bg-light">
-                <h5 class="card-title text-light bg-dark p-2">@x.BookTitle</h5>
-                <h6 class="card-subtitle mb-2 text-muted">@x.AuthorFirstName @x.AuthorLastName</h6>
-                <p class="card-text">Classification: @x.Classification, Category: @x.Category, ISBN: @x.ISBN, Pages: @x.Pages</p>
-                <a href="#" class="card-link">@x.Publisher</a>
-                <button type="button" class="btn btn-secondary float-right">@x.Price</button>
-            </div>
-        </div>
-    </div>
+    <partial name="BookSummary" model="x" />
 }
 <div class="d-flex justify-content-center">
     <div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="btn" page-class-normal="btn-outline-dark"
-         page-class-selected="btn-primary" class="btn-group pull-right m-1">
+         page-class-selected="btn-primary" page-url-category="@Model.CurrentCategory" class="btn-group pull-right m-1">
     </div>
 </div>
